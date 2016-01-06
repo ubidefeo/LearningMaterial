@@ -18,7 +18,7 @@
 /* 	
 	
 	The following block of defines which pin (on the PCF8574*) is designated for which functionality
-	Some LCD displays may have a different pin arrangement, so it's a good thing that the developer
+	Some LCD may have a different pin arrangement, so it's a good thing that the developer
 	of this extended library thought adding a constructor to which we can pass custom values (see later)
 
 	#define 	PIN_FUNCTIONALITY	PCF8574X_PIN
