@@ -1,3 +1,10 @@
+/*
+	Arduino + PCF8574* LCD backpack
+	2015 - ubi de feo - http://ubidefeo.com
+	
+	This draws from the the HelloWorld_i2c.pde example by Francisco Malpartida and requires his extended LiquidCrystal library.
+	https://bitbucket.org/fmalpartida/new-liquidcrystal/wiki/Home
+*/
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
@@ -8,7 +15,7 @@
  	If you don't know your device's address you can use this guide to find it out:
 	http://playground.arduino.cc/Main/I2cScanner
 
- 	The sketch provided will list all the connected i2c devices and their address
+ 	The sketch provided at the link above will list all the connected i2c devices and their address
  	in Decimal format (assuming they're powered up and functioning).
  	
  	In the following #define I have specified the address in Hexadecimal because of
@@ -37,7 +44,7 @@
 #define Rs_pin  0 	// Register Select Pin
 #define Rw_pin  1	// Read/Write Pin
 #define En_pin  2	// Enable Pin
-#define Bl_pin  3	// Backlight Pin
+#define Bl_pin  3	// Backlight Pin | the original example HelloWorld_i2c.pde was probably made to work with a bare chip controlling the backlight via Arduino pin 13
 
 /*
 	Data pins are usually all arranged the same way
