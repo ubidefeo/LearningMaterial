@@ -8,10 +8,18 @@
  	If you don't know your device's address you can use this guide to find it out:
 	http://playground.arduino.cc/Main/I2cScanner
 
- 	The sketch provided will list all the connected i2c devices (assuming they're powered up and functioning).
+ 	The sketch provided will list all the connected i2c devices and their address
+ 	in Decimal format (assuming they're powered up and functioning).
+ 	
+ 	In the following #define I have specified the address in Hexadecimal because of
+ 	personal preference,but it will accept an integer, in this case it would be 39.
+ 	
+ 	If you don't knwo how to convert between Decimal and Hexadecimal here's a link where you can also learn a thing or two
+ 	http://www.binaryhexconverter.com/decimal-to-hex-converter
+
 
  */
-#define I2C_ADDR    0x27
+#define I2C_ADDR    0x27 // 
 
 
 
